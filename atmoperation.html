@@ -1,0 +1,731 @@
+<script>
+    let palace = 126570.68;
+    let charge = 1.92;
+    let min = 999;
+    let max = 10000
+   // balance = withdraw - balance;
+    let Hello = +prompt(`...............Welcome to SLEEK Bank Plc..........
+    
+    
+    Insert Your Card to Continue
+    Press 1. to proceed`)
+    if (Hello == "1"){
+        let Welcome = +prompt(`......................................................SLEEK BANK PLC.................................................
+..N.B.  Service charge of N${charge}kb would  be deducted
+
+    ......... 'ADENIRAN OMOTOYE SHERIFAT'...
+                  BANK: UBA
+                  Account no. = 41XXXXX27
+    
+    Insert Your PIN to Continue`)
+        if (Welcome > min || Welcome < max){
+            let proceed = +prompt(" Press 1. to proceed")
+             if (proceed = "1"){
+                    let prompt1= +prompt(`.........WELCOME ADENIRAN OMOTOYE SHERIFAT......
+                1. Withdraw              4. Balance
+                2. Deposit               5. Airtime/Data
+                3. Smart Wallet          6. Customer Service
+                `)
+                    if (prompt1 == "1"){
+                        let withdrawal = +prompt(`..................Select Amount to withdraw from the Option below.........................
+                        1. N50,000                    4. N5,000
+                        2. N20,000                    5. N2,000
+                        3. N10,000                    6. N1,000
+                                      7. Other`)
+                            if (withdrawal == "1"){
+                                let withdraw = 50000 + charge;
+                                let balance = palace - withdraw;
+                                if (withdraw < palace){
+                                  let procced =  prompt(`You just chose N${withdraw}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            }
+                            else if (withdrawal == "2"){
+                                let withdraw2 = 20000 + charge;
+                                let balance = palace - withdraw2;
+                                if (withdraw2 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw2}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw2 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            } 
+                            else if (withdrawal == "3"){
+                                let withdraw3 = 10000 + charge;
+                                let balance = palace - withdraw3;
+                                if (withdraw3 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw3}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw3 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            } 
+                            else if (withdrawal == "4"){
+                                let withdraw4 = 5000 + charge;
+                                let balance = palace - withdraw4;
+                                if (withdraw4 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw4}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw4 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            } 
+                            else if (withdrawal == "5"){
+                                let withdraw5 = 2000 + charge;
+                                let balance = palace - withdraw5;
+                                if (withdraw5 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw5}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw5 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            }
+                            else if (withdrawal == "6"){
+                                let withdraw6 = 1000 + charge;
+                                let balance = palace - withdraw6;
+                                if (withdraw6 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw6}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw6 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            }  
+                            else if (withdrawal == "7") {
+                                let els = +prompt("input desired amount")
+                                let els1 = els + charge;
+                                let elsbalance = palace - els1;
+                                    if( els > palace){
+                                        alert(`INSUFFICIENT FUNDS.....TRANSACTION DECLINED
+                                        current balance is N${palace}kb`)
+                                    }
+                                    else if ( els < palace){
+                                  let procced =  prompt(`You just chose N${els}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${elsbalance}kb`)
+                                            }
+                                }
+                                /*else if (withdraw > palace){
+                                    alert (`........................Insufficient Funds............
+                                    `)
+                                }*/
+                            }
+                            else {alert("ISSUER INOPERATIVE")}
+                    }
+                    else if (prompt1 == "2"){
+                     let deposit = +prompt(`1.For sleek bank
+                    2. Others`)
+                        if (deposit == "1"){
+                            let sleek = +prompt ("Recipient account number")
+                                        if (sleek > 1111111111 || sleek < 9999999999){
+                                            let proceed = prompt(" press 1 to continue")
+                                                if (proceed = "1"){
+                                                    let deposit = +prompt(`..................Select Amount to deposit from the Option below.........................
+                        1. N50,000                    4. N5,000
+                        2. N20,000                    5. N2,000
+                        3. N10,000                    6. N1,000
+                                      7. Other`)
+                            if (deposit == "1"){
+                                let withdraw = 50000 + charge;
+                                let balance = palace - withdraw;
+                                if (withdraw < palace){
+                                  let procced =  prompt(`You just chose to deposit N${withdraw} into ${sleek}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            }
+                            else if (deposit == "2"){
+                                let withdraw2 = 20000 + charge;
+                                let balance = palace - withdraw2;
+                                if (withdraw2 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw2}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw2 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            } 
+                            else if (deposit == "3"){
+                                let withdraw3 = 10000 + charge;
+                                let balance = palace - withdraw3;
+                                if (withdraw3 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw3}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw3 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            } 
+                            else if (deposit == "4"){
+                                let withdraw4 = 5000 + charge;
+                                let balance = palace - withdraw4;
+                                if (withdraw4 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw4}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw4 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            } 
+                            else if (deposit == "5"){
+                                let withdraw5 = 2000 + charge;
+                                let balance = palace - withdraw5;
+                                if (withdraw5 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw5}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw5 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            }
+                            else if (deposit == "6"){
+                                let withdraw6 = 1000 + charge;
+                                let balance = palace - withdraw6;
+                                if (withdraw6 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw6}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw6 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            }  
+                            else if (deposit == "7") {
+                                let els = +prompt("input desired amount")
+                                let els1 = els + charge;
+                                let elsbalance = palace - els1;
+                                    if( els > palace){
+                                        alert(`INSUFFICIENT FUNDS.....TRANSACTION DECLINED
+                                        current balance is N${palace}kb`)
+                                    }
+                                    else if ( els < palace){
+                                  let procced =  prompt(`You just chose N${els}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${elsbalance}kb`)
+                                            }
+                                }
+                                /*else if (withdraw > palace){
+                                    alert (`........................Insufficient Funds............
+                                    `)
+                                }*/
+                            }
+
+                            else {
+                                alert("ISSUER INOPERATIVE")                            }
+                         }
+                                                else {alert(" ISSUER INOPERATIVE")}         
+                                        }
+                        }
+                        else if(deposit == "2"){
+                            let bank = prompt(`PLEASE INPUT RECIPIENT'S BANK NAME`)
+                                if (bank = String){
+                                    let sleek = +prompt ("Recipient account number")
+                                        if (sleek > 1111111111 || sleek < 9999999999){
+                                            let proceed = prompt(" press 1 to continue")
+                                                if (proceed = "1"){
+                                                    let deposit = +prompt(`..................Select Amount to deposit from the Option below.........................
+                        1. N50,000                    4. N5,000
+                        2. N20,000                    5. N2,000
+                        3. N10,000                    6. N1,000
+                                      7. Other`)
+                                      if (deposit == "1"){
+                                let withdraw = 50000 + charge;
+                                let balance = palace - withdraw;
+                                if (withdraw < palace){
+                                  let procced =  prompt(`You just chose to deposit N${withdraw} into ${sleek}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            }
+                            else if (deposit == "2"){
+                                let withdraw2 = 20000 + charge;
+                                let balance = palace - withdraw2;
+                                if (withdraw2 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw2}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw2 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            } 
+                            else if (deposit == "3"){
+                                let withdraw3 = 10000 + charge;
+                                let balance = palace - withdraw3;
+                                if (withdraw3 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw3}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw3 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            } 
+                            else if (deposit == "4"){
+                                let withdraw4 = 5000 + charge;
+                                let balance = palace - withdraw4;
+                                if (withdraw4 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw4}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw4 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            } 
+                            else if (deposit == "5"){
+                                let withdraw5 = 2000 + charge;
+                                let balance = palace - withdraw5;
+                                if (withdraw5 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw5}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw5 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            }
+                            else if (deposit == "6"){
+                                let withdraw6 = 1000 + charge;
+                                let balance = palace - withdraw6;
+                                if (withdraw6 < palace){
+                                  let procced =  prompt(`You just chose N${withdraw6}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${balance}kb`)
+                                            }
+                                }
+                                else if (withdraw6 > palace){
+                                    alert (`........................Insufficient Funds............
+                                    current balance is N${balance}kb`)
+                                }
+                            }  
+                            else if (deposit == "7") {
+                                let els = +prompt("input desired amount")
+                                let els1 = els + charge;
+                                let elsbalance = palace - els1;
+                                    if( els > palace){
+                                        alert(`INSUFFICIENT FUNDS.....TRANSACTION DECLINED
+                                        current balance is N${palace}kb`)
+                                    }
+                                    else if ( els < palace){
+                                  let procced =  prompt(`You just chose N${els}
+                                                    Be Patient, Transaction in progress....
+                                        press 1 to proceed.`)
+                                            if (procced = "1"){
+                                                alert (`Transaction Successful.....Balance = N${elsbalance}kb`)
+                                            }
+                                }
+                                /*else if (withdraw > palace){
+                                    alert (`........................Insufficient Funds............
+                                    `)
+                                }*/
+                            }
+                            else {
+                                alert("ISSUER INOPERATIVE")                            }
+                         }
+                                                else {alert(" ISSUER INOPERATIVE")}         
+                                        }
+                                
+
+                        }
+                    }
+                    }
+                    else if (prompt1 == "3"){alert("ISSUER INOPERATIVE")}
+                    else if (prompt1 == "4"){
+                        alert (`YOUR CURRENT BALANCE IS N${palace}kb`)
+                    }
+                    else if (prompt1 == "5"){
+                        let air_data = +prompt(`1. Airtime 
+                        2. Data`)
+                            if (air_data == "1"){
+                                let airtime = +prompt(`Select Recipient
+        1. for Myself
+        2. for Others
+               ` )//for myself
+               if (airtime == "1"){
+                let Myself = +prompt ("Input desired amount.")
+                if (Myself <= 0){let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                    Input desired amount.`)
+                        if (Myself0 <= 0){let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                    Input desired amount.`)
+                             if (Myself1 <= 0){alert("Time out")
+                            }
+                        else if (Myself1 > 0){
+                            alert(`You have successfully recharged N${Myself1} worth of airtime. Thank you`)
+                        }
+                        }
+                        else if (Myself0 > 0){
+                            alert(`You have successfully recharged N${Myself0} worth of airtime. Thank you`)
+                        }
+                    }
+                else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime. Thank you.`)}
+                    
+                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                        Input desired amount.`)
+                        if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                        Input desired amount.`)
+                            if (Myself4 > 100000){alert("Time out")
+                            }
+                        else if(Myself4 < 100001){
+                            alert(`You have successfully recharged N${Myself4} worth of airtime. Thank you`)
+                        }
+                        }
+                        else if(Myself3 < 100001){
+                            alert(`You have successfully recharged N${Myself3} worth of airtime. Thank you`)
+                        }
+                    }       
+                }// for others
+                if (airtime == "2"){
+                    let phone_number = +prompt("Please input Recipients Number")
+                    let phone = `0${phone_number}`
+                    if (phone_number > 08000000000){
+                        let network = +prompt(`Select Network Provider
+                        1. Airtel
+                        2. MTN
+                        3. 9mobile
+                        4. Glo `)
+                            if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                               let proceed = prompt(`.
+                                press 1 to proceed`)
+                                    if (proceed = "1"){
+                                        let Myself = +prompt ("Input desired amount.")
+                                                if (Myself <= 0){
+                                                    let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                     Input desired amount.`)
+                                                    if (Myself0 <= 0){
+                                                        let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                        Input desired amount.`)
+                                                            if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                    else if (Myself1 > 0){
+                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                    }
+                                                    }
+                                                else if (Myself0 > 0){
+                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                }
+                                                }
+                                                else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                    Input desired amount.`)
+                                                        if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                            if (Myself4 > 100000){alert("Time out")
+                                                            }
+                                                        else if(Myself4 < 100001){
+                                                        alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                        }
+                                                        }
+                                                        else if(Myself3 < 100001){
+                                                        alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                        }
+                                                }       
+                                    }
+                            }
+                    }
+                    else if( phone_number > 09199999999){
+                    let phone_number =  +prompt(`The phone number does not exist. Input a valid Phone Number.
+                                .
+                                Enter Recepients Phone Number`)
+                                let phone = `0${phone_number}`
+                                if (phone_number > 08000000000){
+                                let network = +prompt(`Select Network Provider
+                                1. Airtel
+                                2. MTN
+                                3. 9mobile
+                                4. Glo `)
+                                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                                         let proceed = prompt(`.
+                                        press 1 to proceed`)
+                                             if (proceed = "1"){
+                                                let Myself = +prompt ("Input desired amount.")
+                                                     if (Myself <= 0){
+                                                          let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                             Input desired amount.`)
+                                                            if (Myself0 <= 0){
+                                                                 let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                                     Input desired amount.`)
+                                                                if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                                else if (Myself1 > 0){
+                                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                            }
+                                                            else if (Myself0 > 0){
+                                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                            }
+                                                    }
+                                                    else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                                if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                                    Input desired amount.`)
+                                                                    if (Myself4 > 100000){alert("Time out")
+                                                                    }
+                                                                    else if(Myself4 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                                    }
+                                                                }
+                                                                else if(Myself3 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                    }       
+                                            }
+                                    }
+                                }
+                                else if( phone_number > 09199999999){
+                                alert(`Time Out`)
+                                }
+                                else if(phone_number < 08000000000){
+                                alert(`Time Out`)
+                                }
+                    }
+                    else if(phone_number < 08000000000){
+                    let phone_number = +prompt(`The Phone Number does not exist. Input a valid Phone Number.
+                        .
+                                Enter Recepients Phone Number`)
+                                let phone = `0${phone_number}`
+                                if (phone_number > 08000000000){
+                                let network = +prompt(`Select Network Provider
+                                1. Airtel
+                                2. MTN
+                                3. 9mobile
+                                4. Glo `)
+                                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                                         let proceed = prompt(`.
+                                        press 1 to proceed`)
+                                             if (proceed = "1"){
+                                                let Myself = +prompt ("Input desired amount.")
+                                                     if (Myself <= 0){
+                                                          let Myself0 = +prompt(`The amount inputed is less than N1. Try again
+                                                             Input desired amount.`)
+                                                            if (Myself0 <= 0){
+                                                                 let Myself1 = +prompt(`The amount inputed is less than N1. Try again
+                                                                     Input desired amount.`)
+                                                                if (Myself1 <= 0){alert("Time out")
+                                                                }
+                                                                else if (Myself1 > 0){
+                                                                    alert(`You have successfully recharged N${Myself1} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                            }
+                                                            else if (Myself0 > 0){
+                                                                 alert(`You have successfully recharged N${Myself0} worth of airtime for ${phone}. Thank you`)
+                                                            }
+                                                    }
+                                                    else if (Myself <100001){alert(`You have sucessfully recharged N${Myself} worth of airtime for ${phone}. Thank you.`)}
+                    
+                                                    else if (Myself > 100000) {let Myself3 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                        Input desired amount.`)
+                                                                if (Myself3 > 100000) {let Myself4 = +prompt(`The amount inputed is more than N100,000. Try again
+                                                                    Input desired amount.`)
+                                                                    if (Myself4 > 100000){alert("Time out")
+                                                                    }
+                                                                    else if(Myself4 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself4} worth of airtime for ${phone}. Thank you`)
+                                                                    }
+                                                                }
+                                                                else if(Myself3 < 100001){
+                                                                    alert(`You have successfully recharged N${Myself3} worth of airtime for ${phone}. Thank you`)
+                                                                }
+                                                    }       
+                                            }
+                                    }
+                                }
+                                else if( phone_number > 09199999999){
+                                alert(`Time Out`)
+                                }
+                                else if(phone_number < 08000000000){
+                                alert(`Time Out`)
+                                }
+                }
+
+                }
+                else{alert("ISSUER INOPERATIVE")}
+                            }
+                            else if (air_data == "2"){
+                let data = +prompt(`Select Recipient
+        1. for Myself
+        2. for Others`)
+                if (data == "1"){
+                 let network = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network == "1" || network == "2" || network == "3" ||network == "4"  ){
+                    let data_me = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me == "1" || data_me == "2" || data_me == "3" || data_me == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+            }
+                if (data == "2"){
+                    let phone_n = +prompt ("Input Recipient's Phone number")
+                    let phone_n1 = `0${phone_n}`
+                        if (phone_n > 08000000000){
+                            let network1 = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network1 == "1" || network1 == "2" || network1 == "3" ||network1 == "4"  ){
+                    let data_me1 = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me1 == "1" || data_me1 == "2" || data_me1 == "3" || data_me1 == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+                        }
+                        if (phone_n < 09199999999){
+                            let network2 = +prompt(`select network provider.
+                    1. Airtel
+                    2. MTN
+                    3. 9mobile
+                    4. Glo`)
+                    if (network2 == "1" || network2 == "2" || network2 == "3" ||network2 == "4"  ){
+                    let data_me2 = +prompt(`Select your desired plan
+                        1. N5000/22GB/30 days
+                        2. N3000/11GB/30 days
+                        3. N1500/6GB/7 days
+                        4. N500/2.5GB/2 days`
+                        )
+                        if (data_me2 == "1" || data_me2 == "2" || data_me2 == "3" || data_me2 == "4"  ){
+                            alert("Transaction Successful. Thank you for Banking with us.")
+                        }
+                        else {alert("Time out")}
+                }
+                        }
+                        else{
+                            alert("Invalid number. Time out")
+                        }
+                    }
+        }
+                            else{alert("ISSUER INOPERATIVE")}
+                    }
+                    else if (prompt1 == "6"){
+                        alert(`Dear Valued Costumer Thank you for Banking with us. To use our customer service
+                        
+                            dial 324. Thank you`)
+                    }
+                    else{alert("ISSUER INOPERATIVE")}
+             }
+            else {alert("Issuer Inoperative")}
+        }
+        else if (Welcome > max || Welcome < min){
+             alert("Issuer Inoperative")
+        }
+        else { alert("Issuer Inoperative")}
+    }
+    else { alert("Issuer Inoperative")}
+    
+</script>
